@@ -1,8 +1,8 @@
-import type { NextConfig } from "next";
-import { env } from "process";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: [env.REPLIT_DOMAINS.split(",")[0]],
-};
+  reactStrictMode: true,
+  // We do not need any other complex settings for this project.
+}
 
-module.exports = nextConfig;
+export default ndefaultig

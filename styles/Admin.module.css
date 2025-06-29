@@ -1,0 +1,191 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+/* Login Styles */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+.loginBox {
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.loginBox h1 {
+    margin-bottom: 24px;
+    color: #1c1e21;
+}
+.loginBox form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.loginBox input {
+    padding: 14px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    font-size: 16px;
+}
+.loginBox button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.loginBox button:hover {
+    background-color: #166fe5;
+}
+.loginBox button:disabled {
+    background-color: #9cb4d8;
+    cursor: not-allowed;
+}
+.errorMessage {
+    color: #fa383e;
+    margin-top: 10px;
+}
+
+/* Admin Panel Styles */
+.adminPanel {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+.header div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.header button {
+    background: #e4e6eb;
+    color: #1c1e21;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.formContainer, .productsContainer {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.formContainer h2, .productsContainer h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #e4e6eb;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.formContainer input, .formContainer textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.formContainer button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.formButtons {
+    display: flex;
+    gap: 10px;
+}
+.formButtons button[type="button"] {
+    background-color: #6c757d;
+}
+
+/* Product List */
+.productItem {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e4e6eb;
+}
+.productItem:last-child {
+    border-bottom: none;
+}
+.productItem img {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.productDetails {
+    flex-grow: 1;
+}
+.productDetails h3 {
+    margin: 0 0 5px;
+}
+.productDetails p {
+    margin: 0;
+    color: #606770;
+    font-size: 0.9rem;
+}
+.productPrice {
+    font-weight: 600;
+    color: #28a745;
+    margin-top: 8px;
+    display: block;
+}
+.productActions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.productActions button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    background: #f0f2f5;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.productActions .deleteButton {
+    color: #fa383e;
+    border-color: #fa383e;
+}

@@ -9,8 +9,6 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // --- THE MAIN PAGE COMPONENT (NO LOGIN) ---
 export default function AdminPage() {
-    // This page no longer checks for a login session.
-    // It goes straight to the dashboard.
     return <Dashboard />;
 }
 
@@ -123,8 +121,10 @@ function Dashboard() {
         setDescription('');
         setPrice('');
         setImageFile(null);
-        if (document.getElementById('product-image')) {
-            document.getElementById('product-image').value = '';
+        const imageInput = document.getElementById('product-image');
+        // THIS IS THE LINE THAT IS NOW CORRECTED
+        if (imageInput) {
+            (imageInput as HTMLInputElement).value = '';
         }
     };
 
